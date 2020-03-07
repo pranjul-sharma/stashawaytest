@@ -24,3 +24,4 @@ export const MY_RESTAURANT_KEYS = {
 
 export const NAN = 'nan';
 export const NOT_AVAILABLE = 'Not Available';
+export const SEARCH_PLACEHOLDER = 'Search restaurants'
