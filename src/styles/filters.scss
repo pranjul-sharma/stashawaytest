@@ -1,0 +1,14 @@
+#filters-container {
+  width: 100vw;
+  > div {
+    width: 100%;
+    flex: 0.5;
+  }
+  .flex-center:first-child {
+    margin-right: 8px;
+  }
+  select {
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
