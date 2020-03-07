@@ -21,3 +21,6 @@ export const MY_RESTAURANT_KEYS = {
   STARS: 'stars',
   TOP_TEN: 'topTen'
 }
+
+export const NAN = 'nan';
+export const NOT_AVAILABLE = 'Not Available';
