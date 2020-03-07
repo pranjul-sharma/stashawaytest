@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import '../styles/restaurant-card.scss';
 import { NAN, NOT_AVAILABLE } from '../shared/constants';
 
-export default function RestaurantCard({
-  restaurant
-}) {
+export default function RestaurantCard({ restaurant, onClick }) {
   const { brand, variety, style, country, stars, topTen } = restaurant;
   return (
-    <div className="restuarant-card-container">
+    <div
+      className="restuarant-card-container"
+      onClick={() => onClick(restaurant)}
+    >
       <div className="flex-start brand-container">
         <div className="heading">Brand:&nbsp;</div>
         <div className="brand info">
@@ -32,9 +33,7 @@ export default function RestaurantCard({
       <div className="flex-space star-rank-container">
         <div className="flex-start">
           <div className="heading">Stars:&nbsp;</div>
-          <div className="info">
-            {isNaN(stars) ? '-' : stars}
-          </div>
+          <div className="info">{isNaN(stars) ? '-' : stars}</div>
         </div>
         <div className="flex-start">
           <div className="heading">Rank:&nbsp;</div>
