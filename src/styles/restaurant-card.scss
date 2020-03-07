@@ -1,10 +1,10 @@
 .restuarant-card-container {
   width: 90vw;
-  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
   background: #ffffff;
   padding: 10px;
-  margin: 5px 10px;
-  margin-left: 8px;
+  margin: 5px auto;
+  max-width: 400px;
   > div {
     margin-bottom: 8px;
   }
@@ -17,13 +17,13 @@
   .brand {
     font-size: 1em;
     line-height: 1.2;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
   }
   .info {
     flex: 0.8;
     margin-left: 4px;
     font-size: 0.9em;
-    color: rgba(0,0,0,0.7);
+    color: rgba(0, 0, 0, 0.7);
     line-height: 1em;
   }
   .divider {
@@ -37,5 +37,14 @@
     width: 100%;
     height: 2em;
     margin-bottom: -8px;
+  }
+}
+
+.restuarant-card-container:first-child {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 810px) {
+  .restuarant-card-container {
   }
 }

@@ -83,3 +83,16 @@ button:focus {
     font-size: 0.8em;
   }
 }
+
+#restuarant-list-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 810px) {
+  #restuarant-list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
